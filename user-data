@@ -1,0 +1,10 @@
+#cloud-config
+hostname: UbuntuVM
+users:
+  - name: root
+    lock_passwd: false
+    plain_text_passwd: 'root'
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+ssh_pwauth: true
+disable_root: false
